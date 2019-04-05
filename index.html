@@ -12,6 +12,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 
   <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
@@ -99,41 +100,36 @@
 
   <footer>
 
-    <div class="wrapper">
-
-
-
-      <div class="section section__footer">
-        <div class="logo--footer">
-          <img src="images/logo-white.svg" alt="">
-        </div>
-        <div class="links">
-          <ul>
-            <li><a href="http://www.facebook.com"></a></li>
-            <li><a href="http://www.instagram.com"></a></li>
-            <li><a href="http://www.twitter.com"></a></li>
-          </ul>
-        </div>
-        <div class="huddle__content">
-          <p>&copy; Copyright 2019 Huddle. All rights reserved.</p>
-        </div>
+    <div class="wrapper flex-container">
+      <section class="logo--footer">
+        <img src="images/logo-white.svg" alt="">
+      </section>
+      <div class="footer__social">
+        <ul>
+          <li><a href="http://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="http://www.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="http://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <p>&copy; Copyright 2019 Huddle. All rights reserved.</p>
       </div>
 
-      <div>
+      <div class="footer__link1 footer__links">
         <ul>
           <li>About Us</li>
           <li>What We Do</li>
           <li>FAQ</li>
         </ul>
       </div>
-      <div>
+      <div class="footer__link2 footer__links">
         <ul>
           <li>Career</li>
           <li>Blog</li>
           <li>Contact Us</li>
         </ul>
       </div>
-      <div class="subscribe__block">
+      <div class="footer__subscribe">
         <section class="subscribe__header">
           <h4>Subscribe</h4>
         </section>
@@ -143,9 +139,9 @@
             send you spam or pass on your email address
           </p>
         </section>
-        <form action="#">
-          <input type="email">
-          <input type="submit" value="Subscribe">
+        <form action="#" class="flex-container subscribe__form">
+          <input type="email" class="subscribe__email">
+          <input type="submit" class="subscribe__submit btn btn--purple" value="Subscribe">
         </form>
 
       </div>
